@@ -4,8 +4,123 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign-Up Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" type="text/css" />
     <script defer src="script.js"></script>
   </head>
-  <body></body>
+  <body>
+    <aside class="aside">
+      <header class="logo-container">
+        <img
+          src="assets/odin-lined.png"
+          alt="TheOdinProject Lined Logo"
+          class="logo"
+        />
+        <h1 class="logo-text">Odin</h1>
+      </header>
+      <p class="shoutout">
+        Photo by
+        <span
+          ><a target="_blank" href="https://unsplash.com/@gsebastian"
+            >Sebastian</a
+          ></span
+        >
+        from
+        <a target="_blank" href="https://unsplash.com/">Unsplash</a>
+      </p>
+    </aside>
+    <main class="main">
+      <article class="article">
+        <h2 class="heading-main">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt,
+          repellendus soluta, maxime ex.
+        </h2>
+        <p class="tagline">You <em>know</em> you want to</p>
+      </article>
+      <section class="form-section">
+        <form action="" class="form">
+          <fieldset>
+            <legend class="form-caption">Let's do this!</legend>
+            <div class="form-row">
+              <ul class="form-list">
+                <li class="form-list-item">
+                  <label for="firstname">First Name</label>
+                  <input
+                    placeholder="Sibusiso"
+                    id="firstname"
+                    class="input"
+                    type="text"
+                  />
+                </li>
+                <li class="form-list-item">
+                  <label for="lastname">Last Name</label>
+                  <input
+                    placeholder="Ndlovu"
+                    id="lastname"
+                    class="input"
+                    type="text"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div class="form-row">
+              <ul class="form-list">
+                <li class="form-list-item">
+                  <label for="email">Email</label>
+                  <input
+                    placeholder="email@example.com"
+                    id="email"
+                    class="input"
+                    type="email"
+                  />
+                </li>
+                <li class="form-list-item">
+                  <label for="phone">Phone Number</label>
+                  <input
+                    placeholder="+1 234 567 890"
+                    id="phone"
+                    class="input phone"
+                    type="text"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div class="form-row">
+              <ul class="form-list">
+                <li class="form-list-item">
+                  <label for="password">Password</label>
+                  <input
+                    required
+                    id="password"
+                    class="input pass"
+                    type="password"
+                  />
+                </li>
+                <li class="form-list-item">
+                  <label for="confirm-pass">Confirm Password</label>
+                  <input
+                    required
+                    id="confirm-pass"
+                    class="input pass"
+                    type="password"
+                  />
+                </li>
+              </ul>
+            </div>
+          </fieldset>
+          <fieldset>
+            <button class="button create-acc">Create Account</button>
+            <p>
+              Already have an account? <a class="log-in" href="/">Log In</a>
+            </p>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+  </body>
 </html>
